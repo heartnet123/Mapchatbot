@@ -1,0 +1,57 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model UserProfile {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String
+  auth0Id   String   @unique
+  preferences Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  chatMessages ChatMessage[]
+  
+  @@map("user_profiles")
+}
+
+model ChatMessage {
+  id        String   @id @default(cuid())
+  userId    String
+  content   String
+  role      String
+  metadata  Json?
+  timestamp DateTime @default(now())
+  
+  user      UserProfile @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("chat_messages")
+}
+
+model TravelLocation {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  category    String
+  latitude    Float
+  longitude   Float
+  address     String
+  rating      Float?
+  priceRange  String
+  tags        String[]
+  imageUrl    String?
+  metadata    Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@map("travel_locations")
+}
