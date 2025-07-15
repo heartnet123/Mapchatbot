@@ -156,38 +156,6 @@ export default function MapPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-900 to-neutral-800">
-      {/* Header */}
-      <div className="relative z-10 glass-effect">
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-3xl font-bold text-white">
-                Discover <span className="text-gradient">Bangkok</span>
-              </h1>
-              <p className="text-neutral-300 mt-2">
-                Explore personalized Bangkok destinations and hidden gems
-              </p>
-            </div>
-            
-            <div className="flex items-center space-x-4">
-              <button className="glass-effect px-4 py-2 rounded-lg text-white hover:bg-white/20 transition-all duration-300">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="11" cy="11" r="8"/>
-                  <path d="M21 21l-4.35-4.35"/>
-                </svg>
-              </button>
-              
-              <button className="glass-effect px-4 py-2 rounded-lg text-white hover:bg-white/20 transition-all duration-300">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M3 6h18l-2 13H5L3 6z"/>
-                  <path d="M3 6l2-2h14l2 2"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main Content */}
       <div className="flex h-screen">
         {/* Sidebar */}

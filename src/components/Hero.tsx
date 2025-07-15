@@ -20,14 +20,13 @@ export default function Hero() {
       <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
-            Your AI-Powered
+            Your Chatbot
             <br />
             <span className="text-gradient">Travel Companion</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-neutral-300 mb-8 max-w-3xl mx-auto font-light">
-            Discover personalized travel recommendations tailored to your unique preferences. 
-            Let artificial intelligence guide your next adventure.
+            Blah Blah Blah.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
