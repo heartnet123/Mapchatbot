@@ -50,6 +50,7 @@ model TravelLocation {
   tags        String[]
   imageUrl    String?
   metadata    Json?
+  embedding   Vector?  // For vector embeddings
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   

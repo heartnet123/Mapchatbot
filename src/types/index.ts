@@ -32,7 +32,7 @@ export interface TravelRecommendation {
 
 export interface ChatMessage {
   id: string
-  userId: string
+  userId?: string
   content: string
   role: 'user' | 'assistant'
   recommendations?: TravelRecommendation[]
@@ -51,3 +51,43 @@ export interface VectorDocument {
   }
   embedding: number[]
 }
+
+export interface LangChainDocument {
+  pageContent: string
+  metadata: Record<string, any>
+}
+
+export interface ChatSession {
+  id: string
+  userId: string
+  title: string
+  messages: ChatMessage[]
+  createdAt: Date
+  updatedAt: Date
+}
+
+export interface RAGContext {
+  query: string
+  retrievedDocuments: LangChainDocument[]
+  userPreferences: UserProfile['preferences']
+  conversationHistory: ChatMessage[]
+}
+
+export interface AgentTool {
+  name: string
+  description: string
+  schema: Record<string, any>
+}
+
+export interface AgentAction {
+  tool: string
+  toolInput: Record<string, any>
+  log: string
+}
+
+export interface AgentFinish {
+  returnValues: Record<string, any>
+  log: string
+}
+
+export type AgentStep = AgentAction | AgentFinish

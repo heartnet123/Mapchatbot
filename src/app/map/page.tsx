@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import MapWithRecommendations from '@/components/MapWithRecommendations'
+import ChatInterface from '@/components/ChatInterface'
 import { TravelRecommendation } from '@/types'
 
 export default function MapPage() {
@@ -154,12 +155,29 @@ export default function MapPage() {
     setSelectedRecommendation(recommendation)
   }
 
+  const handleNewRecommendations = (newRecommendations: TravelRecommendation[]) => {
+    setRecommendations(prevRecs => {
+      // Merge new recommendations with existing ones, avoiding duplicates
+      const existingIds = new Set(prevRecs.map(rec => rec.id))
+      const uniqueNewRecs = newRecommendations.filter(rec => !existingIds.has(rec.id))
+      return [...prevRecs, ...uniqueNewRecs]
+    })
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-900 to-neutral-800">
       {/* Main Content */}
       <div className="flex h-screen">
-        {/* Sidebar */}
-        <div className="w-80 glass-effect m-4 rounded-2xl p-6 overflow-y-auto">
+        {/* Chat Sidebar */}
+        <div className="w-96 glass-effect m-4 rounded-2xl overflow-hidden">
+          <ChatInterface 
+            onNewRecommendations={handleNewRecommendations}
+            className="h-full"
+          />
+        </div>
+
+        {/* Recommendations Sidebar */}
+        <div className="w-80 glass-effect m-4 ml-0 rounded-2xl p-6 overflow-y-auto">
           <h2 className="text-xl font-bold text-white mb-4">
             Bangkok Destinations
           </h2>
