@@ -1,0 +1,19 @@
+{
+  "name": "website-ui",
+  "version": "1.0.0",
+  "description": "A simple website UI using Tailwind CSS",
+  "main": "src/html/index.html",
+  "scripts": {
+    "build": "tailwindcss build src/styles/tailwind.css -o dist/styles.css",
+    "watch": "tailwindcss build src/styles/tailwind.css -o dist/styles.css --watch",
+    "start": "live-server src/html"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

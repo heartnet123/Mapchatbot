@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit BKK – Neighborhoods</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style> *{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;} </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 border-b border-slate-200/70 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
+      <a href="index.html" class="inline-flex items-center gap-2 font-semibold">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15"><g id="_01_align_center" data-name="01 align center"><path d="M1.444,6.669a2,2,0,0,0-.865,3.337l3.412,3.408V20h6.593l3.435,3.43a1.987,1.987,0,0,0,1.408.588,2.034,2.034,0,0,0,.51-.066,1.978,1.978,0,0,0,1.42-1.379L23.991.021ZM2,8.592l17.028-5.02L5.993,16.586v-4Zm13.44,13.424L11.413,18h-4L20.446,4.978Z"/></g></svg>
+        <span>Visit BKK</span>
+      </a>
+      <nav class="hidden gap-6 text-sm md:flex">
+        <a class="hover:text-indigo-700" href="index.html">Home</a>
+        <a class="font-semibold text-indigo-700" href="neighborhoods.html">Neighborhoods</a>
+        <a class="hover:text-indigo-700" href="map.html">Interactive Map</a>
+        <a class="hover:text-indigo-700" href="chatbot.html">Chatbot</a>
+        <a class="hover:text-indigo-700" href="about.html">About Us</a>
+      </nav>
+      <div class="hidden md:block"><input class="rounded-full border border-slate-200 px-3 py-1.5 text-xs" placeholder="Search"/></div>
+    </div>
+  </header>
+
+  <!-- Header band -->
+  <div class="bg-indigo-900 py-10 text-center text-white">
+    <h1 class="text-2xl font-extrabold md:text-3xl">Explore Bangkok's Hidden Neighborhoods</h1>
+  </div>
+
+  <!-- Grid -->
+  <main class="mx-auto max-w-6xl px-4 py-10 md:px-6">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Repeatable card template -->
+      <!-- Card 1 -->
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div class="h-28 w-full bg-gradient-to-b from-slate-400 to-slate-100"></div>
+        <div class="p-5 space-y-4">
+          <h3 class="font-semibold">1</h3>
+          <p class="text-sm text-slate-600">Temples</p>
+          <div class="flex gap-2">
+            <a href="explore.html" class="rounded-md bg-indigo-700 px-3 py-1.5 text-xs font-semibold text-white">Explore More</a>
+            <a href="map.html" class="rounded-md border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-700">View on Map</a>
+          </div>
+        </div>
+      </article>
+      <!-- Card 2 -->
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      </article>
+      <!-- Card 3 -->
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      </article>
+      <!-- Card 4 -->
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      </article>
+      <!-- Card 5 -->
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      </article>
+      <!-- Card 6 -->
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div class="h-28 w-full bg-gradient-to-b from-slate-400 to-slate-100"></div>
+        <div class="p-5 space-y-4">
+          <h3 class="font-semibold">6</h3>
+          <p class="text-sm text-slate-600">.</p>
+          <div class="flex gap-2">
+            <a href="#" class="rounded-md bg-indigo-700 px-3 py-1.5 text-xs font-semibold text-white">Explore More</a>
+            <a href="map.html" class="rounded-md border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-700">View on Map</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

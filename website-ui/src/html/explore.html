@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit BKK – Explore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style> *{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;} </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 border-b border-slate-200/70 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
+      <a href="index.html" class="inline-flex items-center gap-2 font-semibold">
+        <svg class="h-5 w-5 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10V21H3V10"/><path d="M7 21V7h10v14"/><path d="M12 3l9 7H3l9-7z"/></svg>
+        <span>Visit BKK</span>
+      </a>
+      <nav class="hidden gap-6 text-sm md:flex">
+        <a class="hover:text-indigo-700" href="index.html">Home</a>
+        <a class="font-semibold text-indigo-700" href="neighborhoods.html">Neighborhoods</a>
+        <a class="hover:text-indigo-700" href="map.html">Interactive Map</a>
+        <a class="hover:text-indigo-700" href="chatbot.html">Chatbot</a>
+        <a class="hover:text-indigo-700" href="about.html">About Us</a>
+      </nav>
+      <div class="hidden md:block"><input class="rounded-full border border-slate-200 px-3 py-1.5 text-xs" placeholder="Search"/></div>
+    </div>
+  </header>
+
+  <!-- Hero band -->
+  <section class="relative">
+    <div class="h-40 w-full bg-gradient-to-b from-slate-700 to-slate-900"></div>
+    <div class="absolute inset-0 flex items-center">
+      <div class="mx-auto w-full max-w-7xl px-4 md:px-6">
+        <h1 class="text-2xl font-extrabold tracking-tight text-white">NAME</h1>
+        <p class="mt-1 text-sm text-slate-200">About</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="mx-auto grid max-w-7xl gap-6 px-4 py-8 md:grid-cols-[1fr_360px] md:px-6">
+    <!-- Left column -->
+    <section class="space-y-10">
+      <div>
+        <h2 class="text-sm font-semibold">About</h2>
+        <p class="mt-3 max-w-2xl text-sm text-slate-600">Write a short description of this neighborhood here. Mention its vibe, highlights, and why it’s a hidden gem in Bangkok.</p>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold">Top Attractions</h2>
+        <div class="mt-3 grid gap-5 sm:grid-cols-2">
+          <!-- Card A -->
+          <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <div class="relative h-40 w-full bg-gradient-to-b from-slate-300 to-slate-100">
+              <span class="absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full bg-white/90 px-2 py-1 text-[11px] font-semibold text-amber-600 shadow">
+                <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                5
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-semibold">Attraction Name</h3>
+              <p class="mt-1 text-xs text-slate-600">Short highlight about this attraction.</p>
+            </div>
+          </article>
+          <!-- Card B -->
+          <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <div class="relative h-40 w-full bg-gradient-to-b from-slate-300 to-slate-100">
+              <span class="absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full bg-white/90 px-2 py-1 text-[11px] font-semibold text-amber-600 shadow">
+                <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                5
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-semibold">Attraction Name</h3>
+              <p class="mt-1 text-xs text-slate-600">Short highlight about this attraction.</p>
+            </div>
+          </article>
+          <!-- Card C -->
+          <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <div class="relative h-40 w-full bg-gradient-to-b from-slate-300 to-slate-100">
+              <span class="absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full bg-white/90 px-2 py-1 text-[11px] font-semibold text-amber-600 shadow">
+                <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                5
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-semibold">Attraction Name</h3>
+              <p class="mt-1 text-xs text-slate-600">Short highlight about this attraction.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <a href="neighborhoods.html" class="inline-flex w-fit items-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 shadow-sm hover:bg-slate-50">← Back to All Neighborhoods</a>
+    </section>
+
+    <!-- Right column -->
+    <aside class="space-y-4">
+      <!-- Plan your visit -->
+      <section class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+        <h3 class="text-sm font-semibold">Plan Your Visit</h3>
+        <div class="mt-3 space-y-2">
+          <a href="map.html" class="flex w-full items-center justify-center gap-2 rounded-md bg-indigo-800 px-3 py-2 text-sm font-semibold text-white hover:bg-indigo-900"> 
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3V6z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg>
+            View on Interactive Map
+          </a>
+          <a href="chatbot.html" class="flex w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8z"/></svg>
+            Chatbot
+          </a>
+        </div>
+      </section>
+
+      <!-- Suggested Routes -->
+      <section class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+        <h3 class="text-sm font-semibold">Suggested Routes</h3>
+        <div class="mt-3 space-y-3 text-sm">
+          <div class="rounded-lg border p-3">
+            <div class="flex items-center justify-between text-xs text-slate-500">
+              <span>7 stops</span><span class="inline-flex items-center gap-1"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>45 minutes</span>
+            </div>
+            <a href="#" class="mt-2 inline-flex items-center gap-2 text-indigo-700">✈️ View Route</a>
+          </div>
+          <div class="rounded-lg border p-3">
+            <div class="flex items-center justify-between text-xs text-slate-500">
+              <span>5 stops</span><span class="inline-flex items-center gap-1"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>1.5 hours</span>
+            </div>
+            <a href="#" class="mt-2 inline-flex items-center gap-2 text-indigo-700">✈️ View Route</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Getting There -->
+      <section class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+        <h3 class="text-sm font-semibold">Getting There</h3>
+        <dl class="mt-3 space-y-4 text-sm">
+          <div>
+            <dt class="font-medium">By MRT:</dt>
+            <dd class="mt-1 text-slate-600">Nearest station details / walking time.</dd>
+          </div>
+          <div>
+            <dt class="font-medium">By Bus:</dt>
+            <dd class="mt-1 text-slate-600">Useful bus lines and stops.</dd>
+          </div>
+          <div>
+            <dt class="font-medium">By Boat:</dt>
+            <dd class="mt-1 text-slate-600">Pier / boat service information.</dd>
+          </div>
+        </dl>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>
